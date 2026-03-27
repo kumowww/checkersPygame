@@ -1,99 +1,149 @@
-[EN]
-heckers Game
+[EN] Russian Checkers Game
 
-A simple Checkers game implemented in Python using Pygame.
+A Checkers game implementing strict Russian draughts rules in Python using Pygame, featuring upgraded, anti-aliased graphics.
 
-Features
-- Classic 8x8 board
-- Piece movement and capturing
-- King promotion
-- Multiple jump sequences
-- Win condition detection
+Features:
 
-Requirements
-- Python 3.x
+Classic 8x8 board with smooth, anti-aliased piece graphics (pygame.gfxdraw).
+
+Strict Russian Checkers Rules:
+
+Mandatory Maximum Capture: If you can capture, you must. If there are multiple capture paths, you must choose the one that captures the most pieces.
+
+Backward Captures: Regular pieces can capture opponent pieces both forwards and backwards.
+
+Flying Kings: Kings can move and capture across any distance along diagonals.
+
+On-the-fly Promotion: A piece passing through the promotion rank during a multi-jump sequence promotes to a King immediately and continues the jump sequence as a King.
+
+Win or loss and no-valid-moves detection.
+
+Requirements:
+
+- Python 3.x version
+
 - Pygame
 
-Installation
-1. Install Pygame: pip install pygame`
-2. Run the game: python checkers.py`
+Installation:
 
-How to Play
-- Click on a piece to select it
-- Click on a highlighted square to move
-- White moves first
-- Pieces can only move diagonally forward one square, except when capturing
-- Capture by jumping over opponent pieces diagonally
-- Reach the opposite end to become a king
-- Kings can move and capture in any diagonal direction
+- Install Pygame: pip install pygame
 
-Controls
-- Mouse: Select and move pieces
-- Close window to quit
+- Run the game: python checkers.py
 
-[DE]
+How to Play:
 
-Dame-Spiel
+- Click on a piece to select it. Only pieces with valid moves can be selected.
 
-Ein einfaches Dame-Spiel (Checkers), implementiert in Python mit Pygame.
+- Click on a highlighted red dot to move.
 
-Funktionen
-- Klassisches 8x8-Brett
-- Figurenbewegung und Schlagen
-- Königsumwandlung
-- Mehrfache Sprungsequenzen
-- Gewinnzustandserkennung
+- White moves first.
 
-Anforderungen
-- Python 3.x
+- Regular pieces move diagonally forward one square, but can jump/capture in any direction.
+
+- Reach the opposite end of the board to become a King.
+
+Controls:
+
+- Mouse: Select and move pieces.
+
+- Close window: Quit the game.
+
+[DE] "Russische Dame" Spiel
+
+Ein Dame-Spiel, das die Regeln der Russischen Dame in Python mit Pygame und verbesserten, flüssigen Grafiken implementiert.
+
+Funktionen:
+
+Klassisches 8x8-Brett mit geglätteten Anti-Aliasing-Grafiken (pygame.gfxdraw).
+
+Strikte Russische Dame-Regeln:
+
+Zwingendes Schlagen der maximalen Anzahl: Wenn ein Schlagen möglich ist, ist es Pflicht. Gibt es mehrere Möglichkeiten, muss die Sequenz gewählt werden, die die meisten Steine schlägt.
+
+Rückwärtsschlagen: Einfache Steine können gegnerische Steine sowohl vorwärts als auch rückwärts schlagen.
+
+Fliegende Könige: Könige können über jede Distanz entlang der Diagonalen ziehen und schlagen.
+
+Königsumwandlung im Sprung: Erreicht ein Stein während einer Sprungsequenz die letzte Reihe, wird er sofort zum König und setzt den Sprung als König fort.
+
+Gewinn oder Verlust und Zugunfähigkeits-Erkennung.
+
+Anforderungen:
+
+- Python 3.x Version
+
 - Pygame
 
-Installation
-1. Pygame installieren: pip install pygame`
-2. Spiel starten: python checkers.py`
+Installation:
 
-Spielanleitung
-- Klicke auf eine Figur, um sie auszuwählen
-- Klicke auf ein markiertes Feld, um zu ziehen
-- Weiß beginnt
-- Figuren können nur diagonal vorwärts ein Feld ziehen, außer beim Schlagen
-- Schlagen durch diagonales Überspringen von gegnerischen Figuren
-- Erreiche das gegenüberliegende Ende, um König zu werden
-- Könige können in jede diagonale Richtung ziehen und schlagen
+- Pygame installieren: pip install pygame
 
-Steuerung
-- Maus: Figuren auswählen und ziehen
-- Fenster schließen zum Beenden
+- Spiel starten: python checkers.py
 
-[RU]
-Шашки
+Spielanleitung:
 
-Простая игра в шашки, реализованная на Python с использованием Pygame.
+- Klicke auf eine Figur, um sie auszuwählen. Es können nur Figuren mit gültigen Zügen ausgewählt werden.
 
-Особенности
-- Классическая доска 8x8
-- Движение и взятие фигур
-- Превращение в дамку
-- Множественные прыжки
-- Определение победы
+- Klicke auf einen roten Punkt, um zu ziehen.
 
-Требования
-- Python 3.x
+- Weiß beginnt.
+
+- Einfache Figuren ziehen diagonal ein Feld vorwärts, können aber in jede Richtung schlagen.
+
+- Erreiche das gegenüberliegende Ende, um ein König zu werden.
+
+Steuerung:
+
+- Maus: Figuren auswählen und ziehen.
+
+- Fenster schließen: Spiel beenden.
+
+[RU] "Русские Шашки" Игра
+
+Игра в шашки по правилам русских шашек, реализованная на Python с использованием Pygame с улучшенной, сглаженной графикой.
+
+Особенности:
+
+Классическая доска 8x8 со сглаженной графикой шашек (pygame.gfxdraw).
+
+Строгие правила русских шашек:
+
+Обязательный бой максимального количества: Бить обязательно. Если есть выбор из нескольких вариантов взятия, необходимо выбрать тот, который снимает с доски наибольшее количество шашек противника.
+
+Бой назад: Простые шашки могут бить шашки противника как вперед, так и назад.
+
+Длинные ходы дамок: Дамки могут ходить и бить по диагонали на любое свободное расстояние.
+
+Превращение на лету: Если простая шашка достигает последней горизонтали во время серии прыжков, она сразу становится дамкой и продолжает бой уже по правилам дамы.
+
+Автоматическое определение победы и отсутствия ходов.
+
+Требования:
+
+- Python 3.x версия
+
 - Pygame
 
-Установка
-1. Установите Pygame: pip install pygame`
-2. Запустите игру: python checkers.py`
+Установка:
 
-Как играть
-- Кликните на фигуру, чтобы выбрать её
-- Кликните на подсвечённую клетку, чтобы сделать ход
-- Белые ходят первыми
-- Фигуры могут ходить только по диагонали вперёд на одну клетку, кроме случаев взятия
-- Взятие путём перепрыгивания через фигуры противника по диагонали
-- Достигните противоположного края, чтобы стать дамкой
-- Дамки могут ходить и брать в любом диагональном направлении
+- Установите Pygame: pip install pygame
 
-Управление
-- Мышь: Выбор и перемещение фигур
-- Закрыть окно для выхода
+- Запустите игру: python checkers.py
+
+Как играть:
+
+- Кликните на шашку, чтобы выбрать её (выбрать можно только ту шашку, у которой есть допустимые ходы).
+
+- Кликните на подсвеченную красную точку, чтобы сделать ход.
+
+- Белые ходят первыми.
+
+- Простые шашки ходят по диагонали вперёд на одну клетку, но могут бить в любом направлении.
+
+- Достигните противоположного края доски, чтобы стать дамкой.
+
+Управление:
+
+- Мышь: Выбор и перемещение фигур.
+
+- Закрыть окно: Выход из игры.
