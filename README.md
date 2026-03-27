@@ -26,7 +26,7 @@ Requirements:
 
 Installation:
 
-- Install Pygame: pip install pygame
+- Install Pygame: pip install pygame / if Python >3.12 Version then > pip install pygame-ce
 
 - Run the game: python checkers.py
 
@@ -76,7 +76,7 @@ Anforderungen:
 
 Installation:
 
-- Pygame installieren: pip install pygame
+- Pygame installieren: pip install pygame / Falls Python Version >3.12 ist, dann > pip install pygame-ce
 
 - Spiel starten: python checkers.py
 
@@ -126,7 +126,7 @@ Steuerung:
 
 Установка:
 
-- Установите Pygame: pip install pygame
+- Установите Pygame: pip install pygame / Если версия Python > 3.12, то > pip install pygame-ce
 
 - Запустите игру: python checkers.py
 
